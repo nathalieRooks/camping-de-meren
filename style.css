@@ -1,1 +1,171 @@
 /* De css file */
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Goudy Old Style', sans-serif;
+    }
+
+p :not(.info-inschrijving){
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+/* header */
+.home{
+    background-image: url(./media/marble.jpg);
+    padding:50px;
+}
+
+.navbar-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* navbar */
+.navbar{
+    background-color: #8c9c91;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    overflow: hidden;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.navbar li a{
+    color: white;
+    font-size: 25px;
+}
+/* Class info camping */
+.info-text{
+    padding:50px;
+}
+
+/* class inschrijving */
+.info-inschrijving{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./media/marble.jpg);    
+}
+
+.inschrijven{
+    display: block;
+}
+
+.inschrijving{
+    padding-left: 20px;
+}
+
+.routefoto {
+    width: 400px;
+    padding:40px;
+}
+
+
+.contact{
+    background-image: url(./media/marble.jpg);
+    padding: 50px;
+}
+
+
+/* Scheidingslijn */
+.lijn{
+    height: 5px;
+    width: 100%;
+    background-color: #c4cbc4;
+}
+/* Footer */
+footer{
+    left:0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #8c9c91;
+    color: white;
+    padding: 20px;
+}
+footer p{
+    padding-left: 20px ;
+}
+
+/* carrousel */
+
+.carrousel{
+    box-sizing: border-box;
+    max-height: 500px;
+    background-image: url(./media/marble.jpg);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.mySlides{
+    display: none;
+    position: relative;
+    max-height: auto;
+}
+
+.mySlides img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px ;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: 0,0,0,0.8;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.dot{
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-150%);
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
